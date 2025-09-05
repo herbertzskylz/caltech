@@ -1,0 +1,403 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General Body */
+body {
+  background: #1a1a2e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header Section */
+.contact-header {
+ background: rgb(5, 5, 63);
+ min-height: 20vh;
+}
+
+.contact-header h2 {
+  font-size: 1.8rem;
+}
+.fa-house{
+  color: rgb(250, 11, 250);
+}
+
+.L{
+    width: 100%;
+    text-align: left;
+    flex-direction: column;
+    margin: -8px auto;
+}
+
+/* Navigation */
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+
+.navLinks{
+    flex-basis: 80%;
+    text-align: right; 
+}
+
+.navLinks ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 2px 8px;
+    position: relative;
+}
+
+.navLinks ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.navLinks ul li::after{
+    content: '';
+    background: #ff4486;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+.navLinks ul li:hover::after{
+    width: 100%;
+    text-align: center;
+}
+
+.fa-bars, .fa-times {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background: #0f0f1b;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis:  48%;
+  background: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+.contact-col h2 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.contact-col p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.contact-col .icons i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #ff6f61;
+  transition: 0.3s;
+}
+
+.contact-col .icons i:hover {
+  color: #fff;
+}
+
+.contact-col form input,
+.contact-col form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background: #2e2e42;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-col form input:hover,
+.contact-col form textarea:hover {
+  background: #3a3a50;
+}
+
+.contact-col form input:focus,
+.contact-col form textarea:focus {
+  border: 2px solid #ff6f61;
+  outline: none;
+  background-color: #26263a;
+  color: #fff;
+}
+
+/* Submit Button */
+.hero-btn {
+  display: inline-block;
+  background: #ff6f61;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #ea3131;
+  transform: scale(1.03);
+}
+
+/* Toast Popup */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #28a745;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+/* Map Section */
+.map {
+  padding: 20px;
+  background: #1a1a2e;
+  text-align: center;
+}
+
+.map h2 {
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background: #111;
+  text-align: center;
+}
+
+.footer h3 {
+  color: #ff6f61;
+}
+
+.footer p {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.footer .icons a {
+  margin: 10px;
+  font-size: 18px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer .icons a:hover {
+  color: #ff6f61;
+}
+
+
+.get-in-touch{
+    text-align: left;
+    position: relative;
+    top: 1%;
+    left: 5%;
+}
+.get-in-touch ul li{
+    list-style: none;
+}
+
+.get-in-touch p{
+    margin: 2% 0 1%;
+    font-size: 24px;
+    color: blue;
+}
+
+/*whatsApp button*/
+ .herby a{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background: #25d366; /* WhatsApp green */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: flex;
+    row-gap: 10px;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.skylz a {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: #25d366; /* WhatsApp green */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+ .herby a:hover, .skylz a:hover {
+    background: #1ebc59;
+    transform: translateY(-3px);
+}
+
+.herby a i, .skylz a i {
+    font-size: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  color: #aaa;
+}
+
+.footer li {
+  margin-bottom: 5px;
+}
+
+.footer hr {
+  margin: 20px 0;
+  border: 0.5px solid #444;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+
+/* Responsive */
+@media (max-width: 700px) {
+  .contact-col{
+    position: relative;
+    top: 0;
+    right: 20px;
+    height: 250px;
+  }
+  img{
+    height: 60px;
+  }
+  .contact .row {
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 8%;
+  }
+  .contact-header h2 {
+  font-size: .8rem;
+  text-align: center;
+
+}
+    .navLinks ul li{
+        display: block;
+        text-align: center;
+    }
+    .navLinks ul li:hover::after{
+    width: 50%;
+    text-align: center;
+}
+    .navLinks ul{
+        padding: 30px;
+    }
+    .navLinks{
+        height: 65vh;
+        width: 200px;
+        margin-top: 10px;
+        line-height: 2.5;
+        border-radius: 10px;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background: #ea3131;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+ .get-in-touch{
+    text-align: left;
+    position: relative;
+    top: 1%;
+    left: 5%;
+}
+.get-in-touch ul li{
+    list-style: none;
+    font-size: 14px;
+}
+
+.get-in-touch p{
+    margin: 2% 0 1%;
+    font-size: 14px;
+    color: blue;
+}
+
+  .skylz a, .herby a{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+}
+
