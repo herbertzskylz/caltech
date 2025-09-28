@@ -255,7 +255,7 @@ nav{
 /*whatsApp button*/
  .herby a{
     position: fixed;
-    bottom: 40px;
+    bottom: 180px;
     right: 20px;
     background: #25d366; /* WhatsApp green */
     color: white;
@@ -266,7 +266,6 @@ nav{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     z-index: 999;
     display: flex;
-    row-gap: 10px;
     align-items: center;
     gap: 8px;
     font-size: 14px;
