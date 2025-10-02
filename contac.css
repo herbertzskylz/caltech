@@ -12,6 +12,7 @@ body {
   background: #1a1a2e;
   color: #fff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Links */

@@ -1,0 +1,20 @@
+{
+  "name": "caltech",
+  "version": "1.0.0",
+  "description": "stationery and engineering services and materilas",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herbertzskylz/caltech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herbertzskylz/caltech/issues"
+  },
+  "homepage": "https://github.com/herbertzskylz/caltech#readme"
+}

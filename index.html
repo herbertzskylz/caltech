@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
     <section class="header" data-aos="fade-down">
         <nav>
             <div class="L">
-                <span><img src="LOG.png" height="150px" alt="Logo" /></span>
+                <span><img src="images/LOG.png" height="150px" alt="Logo" /></span>
             </div>
             <div class="text-box">
                 <h1>Innovating Supply. Powering Solutions.</h1>
@@ -135,7 +136,7 @@
           Anywhere Within the Region</p>
         <div class="row">
             <div class="products-col" data-aos="zoom-in-up" data-aos-delay="100">
-                <img src="electrical1.jpg" alt="Electrical Product" />
+                <img src="images/electrical1.jpg" alt="Electrical Product" />
                 <div class="layer">
                     <h3>CALTECH</h3>
                     <p><i>"Where your Dreams are transformed to Real Life"</i></p>
@@ -143,7 +144,7 @@
             </div>
 
             <div class="products-col" data-aos="zoom-in-up" data-aos-delay="200">
-                <img src="stationery8.jpg" alt="Stationery Product" />
+                <img src="images/stationery8.jpg" alt="Stationery Product" />
                 <div class="layer">
                     <h3>CALTECH</h3>
                     <p><i>"Where your Dreams are transformed to Real Life"</i></p>
@@ -151,7 +152,7 @@
             </div>
 
             <div class="products-col" data-aos="zoom-in-up" data-aos-delay="300">
-                <img src="stationery6.jpg" alt="Stationery Product" />
+                <img src="images/stationery6.jpg" alt="Stationery Product" />
                 <div class="layer">
                     <h3>CALTECH</h3>
                     <p><i>"Where your Dreams are transformed to Real Life"</i></p>
@@ -159,7 +160,7 @@
             </div>
 
             <div class="products-col" data-aos="zoom-in-up" data-aos-delay="400">
-                <img src="hardw.jpg" alt="Hardware Product" />
+                <img src="images/hardw.jpg" alt="Hardware Product" />
                 <div class="layer">
                     <h3>CALTECH</h3>
                     <p><i>"Where your Dreams are transformed to Real Life"</i></p>
@@ -170,24 +171,115 @@
     </section>
 
     <section class="works" data-aos="fade-up">
-        <h1>Our Projects</h1>
-        <p>Here are Some of Our Projects for Caltech Stationers And Engineering Solutions</p>
+  <h1>Our Projects</h1>
+  <p>Here are some of our projects for Caltech Stationers and Engineering Solutions</p>
+
+  <button id="showProjectsBtn" class="projects-btn">
+    All Our Projects
+  </button>
+
+  <!-- Hidden projects container -->
+  <div id="allProjects" class="projects-grid" style="display: none;">
+    <div class="project-item" data-aos="fade-up">
+      <img src="new.avif" alt="Project 1" />
+      <h3>First Project 2023</h3>
+      <p>Complete renovation project with engineering blueprints, custom reports, and successful delivery.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="new3.jpg" alt="Project 2" />
+      <h3>Ongoing Construction</h3>
+      <p>Ongoing work-in-progress with detailed progress tracking, timelines, and achievements.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/project2.webp" alt="Project 3" />
+      <h3>Bridge Engineering</h3>
+      <p>Structural bridge project including design, foundation work, and final testing reports.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/p10.webp" alt="Project 4" />
+      <h3>Factory Setup</h3>
+      <p>Complete industrial factory installation with electrical, mechanical, and safety solutions.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/p5.webp" alt="Project 5" />
+      <h3>Stationery Supply Chain</h3>
+      <p>End-to-end stationery distribution system with tracking and reporting dashboard.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/p6.webp" alt="Project 6" />
+      <h3>Residential Project</h3>
+      <p>Housing development with quality assurance, landscaping, and client satisfaction reports.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/p7.webp" alt="Project 7" />
+      <h3>Office Automation</h3>
+      <p>Custom IT & engineering automation project with seamless workflow integration.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/p8.webp" alt="Project 8" />
+      <h3>Road Works</h3>
+      <p>Highway and road construction project including asphalt works and maintenance plans.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/p9.webp" alt="Project 9" />
+      <h3>Engineering Consultancy</h3>
+      <p>Full-service consultancy including feasibility studies, designs, and implementation strategies.</p>
+    </div>
+
+    <div class="project-item" data-aos="fade-up">
+      <img src="images/project1.webp" alt="Project 10" />
+      <h3>Energy Solutions</h3>
+      <p>Solar and energy solutions project, providing sustainable alternatives for businesses.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('showProjectsBtn');
+  const projects = document.getElementById('allProjects');
+
+  // Toggle projects with fade-in
+  btn.addEventListener('click', () => {
+    if (projects.style.display === "none" || projects.style.display === "") {
+      projects.style.display = "grid";
+      btn.textContent = "Hide Projects";
+
+      // Re-init AOS for animation when shown
+      setTimeout(() => {
+        AOS.refresh();
+      }, 100);
+    } else {
+      projects.style.display = "none";
+      btn.innerHTML = "All Our Projects";
+    }
+  });
+</script>
+
+
 
         <div class="row">
             <div class="works-col" data-aos="fade-up" data-aos-delay="100">
-                <img src="new.avif" alt="Project 1" />
+                <img src="images/new.avif" alt="Project 1" />
                 <h3>First Project 2023</h3>
                 <p>Link with us to get the best quality Engineering Services</p>
             </div>
 
             <div class="works-col" data-aos="fade-up" data-aos-delay="200">
-                <img src="new3.jpg" alt="Project 2" />
+                <img src="images/new3.jpg" alt="Project 2" />
                 <h3>Still Cooking</h3>
                 <p>Link with us to get the best quality Engineering Services</p>
             </div>
 
             <div class="works-col" data-aos="fade-up" data-aos-delay="300">
-                <img src="team2.jpg" alt="Project 3" />
+                <img src="images/new4.jpg" alt="Project 3" />
                 <h3>Men at Work</h3>
                 <p>Link with us to get the best quality Engineering Services</p>
             </div>
@@ -225,7 +317,7 @@
     </a>
 
     <hr />
-    <p>&copy;2025 @herbertzskylz. All Rights Reserved</p>
+    <p>&copy;2025 @CaltechSolutions. All Rights Reserved</p>
 
     <!-- Social Media Icons -->
     <div class="icons">
@@ -292,5 +384,7 @@
     });
   });
     </script>
+
+    <script src="frontend.js"></script>
 </body>
 </html>

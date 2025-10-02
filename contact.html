@@ -19,7 +19,7 @@
     <section class="contact-header">
       <nav>
         <div class="L" data-aos="fade-up";>
-                <span><img src="LOG.png" height="150px" alt="Logo" ; /></span>
+                <span><img src="images/LOG.png" height="150px" alt="Logo" ; /></span>
                 <h2><i class="fas fa-house"></i>Caltech Stationers And Engineering Solutions</h2>
             </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -27,7 +27,7 @@
         <div class="navLinks" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="cal.php">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="about-us.html">ABOUT</a></li>
             <li><a href="services.html">SERVICES</a></li>
             <li><a href="blog.php">BLOG</a></li>
@@ -55,18 +55,17 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-col" data-aos="fade-up">
-          <h2>Send Us a Message</h2>
-          <form id="contactForm" method="POST" action="submit_form.php">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <input type="text" name="subject" placeholder="Subject" />
-            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-            <button type="submit" class="hero-btn">Submit</button>
-          </form>
-        </div>
-      </div>
+      <div class="contact-col" data-aos="fade-up">
+  <h2>Send Us a Message</h2>
+  <form id="contact-form">
+    <input type="text" id="contact-name" name="name" placeholder="Your Name" required />
+    <input type="email" id="contact-email" name="email" placeholder="Your Email" required />
+    <input type="text" id="contact-subject" name="subject" placeholder="Subject" />
+    <textarea id="contact-message" name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit" class="hero-btn">Submit</button>
+  </form>
+</div>
+
     </section>
 
       <!--WhatsApp-->
@@ -155,5 +154,8 @@
     navLinks.style.right = "-200px";
   }
 </script>
+
+<script src="frontend.js"></script>
+<script src="backend.js"></script>
 </body>
 </html>
