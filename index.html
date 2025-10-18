@@ -1,39 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CALTECH STATIONERS AND ENGINEERING SOLUTIONS</title>
+    <title>CALTECH STATIONERS AND ENGINEERING SOLUTIONS - Innovating Supply. Powering Solutions.</title>
 
-    <!-- Link to your CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
 </head>
 <body>
-
-    <section class="header" data-aos="fade-down">
-        <nav>
+    <header class="header" data-aos="fade-down">
+        <nav aria-label="Main Navigation">
             <div class="L">
-                <span><img src="images/LOG.png" height="150px" alt="Logo" /></span>
+                <a href="index.html" aria-label="Caltech Solutions Home">
+                    <img src="images/LOG.png" height="150" alt="Caltech Solutions Logo" />
+                </a>
             </div>
             <div class="text-box">
                 <h1>Innovating Supply. Powering Solutions.</h1>
                 <p>Caltech Stationers and Engineering Solutions delivers top-tier stationery and practical engineering <br /> solutions for schools, businesses, and industries.</p>
-                <a class="hero-btn" href="https://wa.me/256761264781?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20learn%20more." 
+                <a class="hero-btn" 
+                   href="https://wa.me/256761264781?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20learn%20more%20about%20your%20services." 
                    target="_blank" 
-                 aria-label="Chat on WhatsApp">Request a Quote</a>
-                 <a href="services.html" class="hero-btn">Explore Our Services</a>
+                   aria-label="Chat with us on WhatsApp to request a quote">Request a Quote</a>
+                <a href="services.html" class="hero-btn">Explore Our Services</a>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" aria-label="Open Navigation Menu"></i>
             <div class="navLinks" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" onclick="hideMenu()" aria-label="Close Navigation Menu"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about-us.html">ABOUT</a></li>
@@ -44,305 +43,294 @@
                 </ul>
             </div>
         </nav>
-    </section>
+    </header>
 
-    <section class="us" data-aos="fade-up">
-        <h1>About Us</h1>
-        <div class="text-box">
-        <p>
-        At Caltech Stationers and Engineering Solutions, we are more than just a business—we 
-        are a hub of innovation, reliability, and service. Founded with the vision of bridging
-        academic and technical gaps, our company combines premium stationery supply with practical
-        engineering services to meet the evolving needs of students, institutions, and professionals 
-        alike.
-        </p>
-        </div>
-
-        <h1>Our Goals</h1>
-        <p>To ensure quality meets the purpose and needs of our customers anywhere in the region.</p>
-        <div class="row">
-            <div class="us-col" data-aos="fade-up">
-                <h3>🪴 Mission</h3>
-                <p>To empower our clients with dependable products and innovative engineering solutions tailored to their specific needs.</p>
-            </div>
-            <div class="us-col" data-aos="fade-up">
-                <h3>👁️ Vision</h3>
-                <p>To be a leading name in Moroto City and the Neighboring Cities for both stationery and engineering services, known for quality, trust, and versatility.</p>
-            </div>
-            <div class="us-col" data-aos="fade-up">
-                <h3>🎯 Why Choose Us?</h3>
-                <p>High-quality, affordable supplies</p>
-                <p>Skilled engaged engineering Team</p>
-                <p>Reliable, fast delivery services</p>
-                <p>Trusted by schools, businesses, and local industries</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="products" data-aos="fade-up">
-        <h2>
-            We construct homes with finishes and features that fit your
-            lifestyle and also provide Stationery support to Students and Offices.
-        </h2>
-
-   <div class="row">
-        <div class="const" data-aos="fade-up">
-            <h3>📦 Stationery & Office Supplies</h3>
-            <ul>
-                <li>Exercise books, notebooks, and files</li>
-                <li>Pens, pencils, markers, highlighters</li>
-                <li>Printing papers (A4, A3), manila papers, sticky notes</li>
-                <li>Office organization tools (staplers, binders, folders)</li>
-                <li>Art supplies (crayons, paints, brushes, drawing sets)</li>
-            </ul>
-            </div>
-            <div class="const" data-aos="fade-up">
-            <h3>🔧 Engineering Service Solutions</h3>
-            <ul>
-                <li>Civil and structural engineering design & drafting</li>
-                <li>Electrical installation and wiring solutions</li>
-                <li>Plumbing and water system designs</li>
-                <li>Site supervision and project consultancy</li>
-                <li>ASolar and renewable energy system installation</li>
-            </ul>
+    <main>
+        <section class="us" data-aos="fade-up">
+            <h2>About Us</h2>
+            <div class="text-box">
+                <p>
+                    At **Caltech Stationers and Engineering Solutions**, we are more than just a business—we 
+                    are a hub of **innovation, reliability, and service**. Founded with the vision of bridging
+                    academic and technical gaps, our company combines premium stationery supply with practical
+                    engineering services to meet the evolving needs of students, institutions, and professionals 
+                    alike.
+                </p>
             </div>
 
-            <div class="const" data-aos="fade-up">
-            <h3>🖨️ Printing & Branding Services</h3>
-            <ul>
-                <li>Bulk printing for schools, offices, and businesses</li>
-                <li>Custom branding on books, pens, t-shirts, and mugs</li>
-                <li>Printing papers (A4, A3), manila papers, sticky notes</li>
-                <li>Lamination, photocopying, and binding services</li>
-                <li>Certificate and document design/printing</li>
-            </ul>
-            </div>
-
-            <div class="const" data-aos="fade-up">
-            <h3>🎯 Specialized Services Offered</h3>
-            <ul>
-                <li>School supply contracts & institutional deliveries</li>
-                <li>Technical drawing kits & engineering tools</li>
-                <li>Custom office supply kits for startups and SMEs</li>
-                <li>Maintenance & repair of engineering equipment</li>
-                <li>B.O.Q & Site Assessments</li>
-            </ul>
-       </div>
-    </div>
-
-        <h1>Our Products</h1>
-        <p>
-          We Offer Quality and affordable Products for both Stationery and Engineering Services
-          Anywhere Within the Region</p>
-        <div class="row">
-            <div class="products-col" data-aos="zoom-in-up" data-aos-delay="100">
-                <img src="images/electrical1.jpg" alt="Electrical Product" />
-                <div class="layer">
-                    <h3>CALTECH</h3>
-                    <p><i>"Where your Dreams are transformed to Real Life"</i></p>
+            <h2 class="section-subtitle">Our Vision & Mission</h2>
+            <p>Our goal is to ensure quality meets the specific purpose and needs of our customers anywhere in the region.</p>
+            <div class="row">
+                <div class="us-col" data-aos="fade-up">
+                    <h3><i class="fa fa-bullseye"></i> Mission</h3>
+                    <p>To empower our clients with dependable products and innovative engineering solutions tailored to their specific needs.</p>
+                </div>
+                <div class="us-col" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fa fa-eye"></i> Vision</h3>
+                    <p>To be the leading name in Moroto City and the Neighboring Cities for both stationery and engineering services, known for **quality, trust, and versatility**.</p>
+                </div>
+                <div class="us-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fa fa-handshake-angle"></i> Why Choose Us?</h3>
+                    <p>High-quality, affordable supplies</p>
+                    <p>Skilled, engaged engineering team</p>
+                    <p>Reliable and fast delivery services</p>
+                    <p>Trusted by schools, businesses, and local industries</p>
                 </div>
             </div>
+        </section>
 
-            <div class="products-col" data-aos="zoom-in-up" data-aos-delay="200">
-                <img src="images/stationery8.jpg" alt="Stationery Product" />
-                <div class="layer">
-                    <h3>CALTECH</h3>
-                    <p><i>"Where your Dreams are transformed to Real Life"</i></p>
+        <hr />
+
+        <section class="products" data-aos="fade-up">
+            <h2>
+                Comprehensive Services: From Office Supplies to Engineering Solutions
+            </h2>
+            <p>
+                We construct homes with finishes and features that fit your lifestyle and also provide Stationery support to Students and Offices.
+            </p>
+
+            <div class="row">
+                <article class="const" data-aos="fade-up">
+                    <h3>📦 Stationery & Office Supplies</h3>
+                    <ul>
+                        <li>Exercise books, notebooks, and files</li>
+                        <li>Pens, pencils, markers, highlighters</li>
+                        <li>Printing papers (A4, A3), manila papers, sticky notes</li>
+                        <li>Office organization tools (staplers, binders, folders)</li>
+                        <li>Art supplies (crayons, paints, brushes, drawing sets)</li>
+                    </ul>
+                </article>
+                <article class="const" data-aos="fade-up" data-aos-delay="100">
+                    <h3>🔧 Engineering Service Solutions</h3>
+                    <ul>
+                        <li>Civil and structural engineering design & drafting</li>
+                        <li>Electrical installation and wiring solutions</li>
+                        <li>Plumbing and water system designs</li>
+                        <li>Site supervision and project consultancy</li>
+                        <li>Solar and renewable energy system installation</li>
+                    </ul>
+                </article>
+                <article class="const" data-aos="fade-up" data-aos-delay="200">
+                    <h3>🖨️ Printing & Branding Services</h3>
+                    <ul>
+                        <li>Bulk printing for schools, offices, and businesses</li>
+                        <li>Custom branding on books, pens, t-shirts, and mugs</li>
+                        <li>Lamination, photocopying, and binding services</li>
+                        <li>Certificate and document design/printing</li>
+                        <li>Flyers, brochures, and banner printing</li>
+                    </ul>
+                </article>
+                <article class="const" data-aos="fade-up" data-aos-delay="300">
+                    <h3>🎯 Specialized Services Offered</h3>
+                    <ul>
+                        <li>School supply contracts & institutional deliveries</li>
+                        <li>Technical drawing kits & engineering tools supply</li>
+                        <li>Custom office supply kits for startups and SMEs</li>
+                        <li>Maintenance & repair of engineering equipment</li>
+                        <li>B.O.Q (Bill of Quantities) & Site Assessments</li>
+                    </ul>
+                </article>
+            </div>
+
+            <h2 class="section-subtitle">Featured Products</h2>
+            <p>
+                We offer quality and affordable products for both stationery and engineering services
+                anywhere within the region.
+            </p>
+            <div class="row product-gallery">
+                <div class="products-col" data-aos="zoom-in-up" data-aos-delay="100">
+                    <img src="images/electrical1.jpg" alt="Electrical Product Example" loading="lazy" />
+                    <div class="layer">
+                        <h3>ELECTRICAL SUPPLIES</h3>
+                        <p><i>"Quality products for every technical need."</i></p>
+                    </div>
+                </div>
+
+                <div class="products-col" data-aos="zoom-in-up" data-aos-delay="200">
+                    <img src="images/stationery8.jpg" alt="Office Stationery Assortment" loading="lazy" />
+                    <div class="layer">
+                        <h3>OFFICE ESSENTIALS</h3>
+                        <p><i>"The backbone of every productive workplace."</i></p>
+                    </div>
+                </div>
+
+                <div class="products-col" data-aos="zoom-in-up" data-aos-delay="300">
+                    <img src="images/stationery6.jpg" alt="Student Stationery Supplies" loading="lazy" />
+                    <div class="layer">
+                        <h3>SCHOOL SUPPLIES</h3>
+                        <p><i>"Empowering the next generation of innovators."</i></p>
+                    </div>
+                </div>
+
+                <div class="products-col" data-aos="zoom-in-up" data-aos-delay="400">
+                    <img src="images/hardw.jpg" alt="Construction Hardware and Tools" loading="lazy" />
+                    <div class="layer">
+                        <h3>ENGINEERING HARDWARE</h3>
+                        <p><i>"The right tools for lasting construction."</i></p>
+                    </div>
                 </div>
             </div>
+            <a href="contact.html" class="hero-btn red-btn">Order Now</a>
+        </section>
 
-            <div class="products-col" data-aos="zoom-in-up" data-aos-delay="300">
-                <img src="images/stationery6.jpg" alt="Stationery Product" />
-                <div class="layer">
-                    <h3>CALTECH</h3>
-                    <p><i>"Where your Dreams are transformed to Real Life"</i></p>
-                </div>
+        <hr />
+
+        <section class="works" data-aos="fade-up">
+            <h2>Our Portfolio of Projects</h2>
+            <p>Explore some of the successful projects completed by Caltech Stationers and Engineering Solutions.</p>
+
+            <div class="row">
+                <article class="works-col" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/new.avif" alt="Residential Renovation Project" loading="lazy" />
+                    <h3>First Project 2023</h3>
+                    <p>Complete renovation project with engineering blueprints, custom reports, and successful delivery.</p>
+                </article>
+
+                <article class="works-col" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/new3.jpg" alt="Ongoing Construction Site" loading="lazy" />
+                    <h3>Ongoing Construction</h3>
+                    <p>Ongoing work-in-progress with detailed progress tracking, timelines, and achievements.</p>
+                </article>
+
+                <article class="works-col" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/new4.jpg" alt="Workers on a construction site" loading="lazy" />
+                    <h3>Men at Work</h3>
+                    <p>Structural bridge project including design, foundation work, and final testing reports.</p>
+                </article>
             </div>
 
-            <div class="products-col" data-aos="zoom-in-up" data-aos-delay="400">
-                <img src="images/hardw.jpg" alt="Hardware Product" />
-                <div class="layer">
-                    <h3>CALTECH</h3>
-                    <p><i>"Where your Dreams are transformed to Real Life"</i></p>
-                </div>
+            <button id="showProjectsBtn" class="projects-btn" aria-expanded="false" aria-controls="allProjects">
+                All Our Projects
+            </button>
+
+            <div id="allProjects" class="projects-grid" style="display: none;">
+                <article class="project-item" data-aos="fade-up">
+                    <img src="new.avif" alt="Project 1 Renovation" loading="lazy" />
+                    <h3>Residential Renovation</h3>
+                    <p>Complete renovation project with engineering blueprints, custom reports, and successful delivery.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="new3.jpg" alt="Ongoing Construction" loading="lazy" />
+                    <h3>Ongoing Development</h3>
+                    <p>Ongoing work-in-progress with detailed progress tracking, timelines, and achievements.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/project2.webp" alt="Bridge Engineering Project" loading="lazy" />
+                    <h3>Bridge Engineering</h3>
+                    <p>Structural bridge project including design, foundation work, and final testing reports.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/p10.webp" alt="Factory Setup Industrial" loading="lazy" />
+                    <h3>Industrial Factory Setup</h3>
+                    <p>Complete industrial factory installation with electrical, mechanical, and safety solutions.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/p5.webp" alt="Stationery Supply Chain Logistics" loading="lazy" />
+                    <h3>Supply Chain Logistics</h3>
+                    <p>End-to-end stationery distribution system with tracking and reporting dashboard.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/p6.webp" alt="Residential Housing Development" loading="lazy" />
+                    <h3>Housing Development</h3>
+                    <p>Housing development with quality assurance, landscaping, and client satisfaction reports.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/p7.webp" alt="Office Automation IT" loading="lazy" />
+                    <h3>Office Automation</h3>
+                    <p>Custom IT & engineering automation project with seamless workflow integration.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/p8.webp" alt="Road Works and Pavement" loading="lazy" />
+                    <h3>Infrastructure Road Works</h3>
+                    <p>Highway and road construction project including asphalt works and maintenance plans.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/p9.webp" alt="Engineering Consultancy Meeting" loading="lazy" />
+                    <h3>Engineering Consultancy</h3>
+                    <p>Full-service consultancy including feasibility studies, designs, and implementation strategies.</p>
+                </article>
+
+                <article class="project-item" data-aos="fade-up">
+                    <img src="images/project1.webp" alt="Solar Energy Solutions" loading="lazy" />
+                    <h3>Renewable Energy Solutions</h3>
+                    <p>Solar and energy solutions project, providing sustainable alternatives for businesses.</p>
+                </article>
             </div>
-        </div>
-        <a href="#" class="hero-btn red-btn">Order Now</a>
-    </section>
+        </section>
+        
+        <hr />
 
-    <section class="works" data-aos="fade-up">
-  <h1>Our Projects</h1>
-  <p>Here are some of our projects for Caltech Stationers and Engineering Solutions</p>
+        <section class="cta" data-aos="zoom-in">
+            <h2>Ready to Start Your Project or Place an Order?</h2>
+            <p>Request a **Bill of Quantities (B.O.Q)** or order items from anywhere in the region. We are ready to cover your needs anytime.</p>
+            <a href="contact.html" class="hero-btn">Get in Touch Today</a>
+        </section>
 
-  <button id="showProjectsBtn" class="projects-btn">
-    All Our Projects
-  </button>
+    </main>
 
-  <!-- Hidden projects container -->
-  <div id="allProjects" class="projects-grid" style="display: none;">
-    <div class="project-item" data-aos="fade-up">
-      <img src="new.avif" alt="Project 1" />
-      <h3>First Project 2023</h3>
-      <p>Complete renovation project with engineering blueprints, custom reports, and successful delivery.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="new3.jpg" alt="Project 2" />
-      <h3>Ongoing Construction</h3>
-      <p>Ongoing work-in-progress with detailed progress tracking, timelines, and achievements.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/project2.webp" alt="Project 3" />
-      <h3>Bridge Engineering</h3>
-      <p>Structural bridge project including design, foundation work, and final testing reports.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/p10.webp" alt="Project 4" />
-      <h3>Factory Setup</h3>
-      <p>Complete industrial factory installation with electrical, mechanical, and safety solutions.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/p5.webp" alt="Project 5" />
-      <h3>Stationery Supply Chain</h3>
-      <p>End-to-end stationery distribution system with tracking and reporting dashboard.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/p6.webp" alt="Project 6" />
-      <h3>Residential Project</h3>
-      <p>Housing development with quality assurance, landscaping, and client satisfaction reports.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/p7.webp" alt="Project 7" />
-      <h3>Office Automation</h3>
-      <p>Custom IT & engineering automation project with seamless workflow integration.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/p8.webp" alt="Project 8" />
-      <h3>Road Works</h3>
-      <p>Highway and road construction project including asphalt works and maintenance plans.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/p9.webp" alt="Project 9" />
-      <h3>Engineering Consultancy</h3>
-      <p>Full-service consultancy including feasibility studies, designs, and implementation strategies.</p>
-    </div>
-
-    <div class="project-item" data-aos="fade-up">
-      <img src="images/project1.webp" alt="Project 10" />
-      <h3>Energy Solutions</h3>
-      <p>Solar and energy solutions project, providing sustainable alternatives for businesses.</p>
-    </div>
-  </div>
-</section>
-
-<script>
-  const btn = document.getElementById('showProjectsBtn');
-  const projects = document.getElementById('allProjects');
-
-  // Toggle projects with fade-in
-  btn.addEventListener('click', () => {
-    if (projects.style.display === "none" || projects.style.display === "") {
-      projects.style.display = "grid";
-      btn.textContent = "Hide Projects";
-
-      // Re-init AOS for animation when shown
-      setTimeout(() => {
-        AOS.refresh();
-      }, 100);
-    } else {
-      projects.style.display = "none";
-      btn.innerHTML = "All Our Projects";
-    }
-  });
-</script>
-
-
-
-        <div class="row">
-            <div class="works-col" data-aos="fade-up" data-aos-delay="100">
-                <img src="images/new.avif" alt="Project 1" />
-                <h3>First Project 2023</h3>
-                <p>Link with us to get the best quality Engineering Services</p>
-            </div>
-
-            <div class="works-col" data-aos="fade-up" data-aos-delay="200">
-                <img src="images/new3.jpg" alt="Project 2" />
-                <h3>Still Cooking</h3>
-                <p>Link with us to get the best quality Engineering Services</p>
-            </div>
-
-            <div class="works-col" data-aos="fade-up" data-aos-delay="300">
-                <img src="images/new4.jpg" alt="Project 3" />
-                <h3>Men at Work</h3>
-                <p>Link with us to get the best quality Engineering Services</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- WhatsApp Chat Button -->
-    <div class="herby">
+    <div class="herby whatsapp-float">
         <a href="https://wa.me/256761264781?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20learn%20more." 
            target="_blank" 
-           aria-label="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i> Chat:0761264781
+           aria-label="Chat with Caltech Solutions on WhatsApp">
+            <i class="fab fa-whatsapp"></i> Chat: +256761264781
         </a>
     </div>
 
-    <section class="cta" data-aos="zoom-in">
-        <h1>Request for a B.O.Q and Items from Anywhere And We will get you covered anytime.</h1>
-    </section>
+    <footer class="footer" data-aos="fade-up">
+        <div class="get-in-touch">
+            <h3>Get in Touch</h3>
+            <p>Got Questions? <br> Contact Us Directly.</p>
+            <address>
+                <ul>
+                    <li><i class="fa fa-phone"></i> **Phone:** <br><a href="tel:+256790702669">+256 790 702 669</a> / <a href="tel:+256761264781">+256 761 264 781</a></li><br />
+                    <li><i class="fa fa-envelope"></i> **Email:** <br><a href="mailto:info@caltechsolutions.com">info@caltechsolutions.com</a></li><br />
+                    <li><i class="fa fa-location-dot"></i> **Address:** <br> Nabilatuk - Moroto, Uganda</li>
+                </ul>
+            </address>
+        </div>
 
-<section class="footer" data-aos="fade-up">
-    <div class="get-in-touch">
-        <p>Got Questions? <br> Contact Us.</p>
-        <ul>
-            <li><i class="fa fa-phone"></i> Tel: <br>+256790702669 / 761264781</li><br />
-            <li><i class="fa fa-envelope"></i> Email: <br> info@caltechsolutions.com</li><br />
-            <li><i class="fa fa-location-dot"></i> Address: <br> Nabilatuk - Moroto</li>
-        </ul>
-    </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/herbertz.skylz.2025" target="_blank" aria-label="Follow us on Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/herbertz_skylz/" target="_blank" aria-label="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/256761264781?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20learn%20more." 
+               target="_blank" 
+               aria-label="Chat with us on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank" aria-label="Connect with us on LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
 
-    
-
-    <!-- Back to top -->
-    <a href="#" class="back-to-top" title="Back to Top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-
-    <hr />
-    <p>&copy;2025 @CaltechSolutions. All Rights Reserved</p>
-
-    <!-- Social Media Icons -->
-    <div class="icons">
-        <a href="https://www.facebook.com/herbertz.skylz.2025" target="_blank" aria-label="Follow us on Facebook">
-            <i class="fab fa-facebook-f"></i>
+        <hr />
+        <p class="copyright-text">&copy; 2025 **Caltech Solutions**. All Rights Reserved.</p>
+        
+        <a href="#top" class="back-to-top" title="Back to Top" aria-label="Back to Top of Page">
+            <i class="fa fa-arrow-up"></i>
         </a>
+    </footer>
 
-        <a href="https://www.instagram.com/herbertz_skylz/" target="_blank" aria-label="Follow us on Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-
-        <a href="https://wa.me/256761264781?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20learn%20more." 
-           target="_blank" 
-           aria-label="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-        <a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank" aria-label="Connect with us on LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-    </div>
-</section>
-
-    <!-- Menu toggle script -->
     <script>
+        // AOS Initialization Script (Moved after the AOS script link)
+        AOS.init({
+            duration: 1200,
+            offset: 100,
+            once: true,
+        });
+
+        /* MOBILE MENU TOGGLE SCRIPT */
         var navLinks = document.getElementById("navLinks");
         function showMenu() {
             navLinks.style.right = "0px";
@@ -350,41 +338,54 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
-    </script>
 
-    <!-- AOS Animation Script -->
-   
-    <script>
-        AOS.init({
-            duration: 1200,
-            offset: 100,
-            once: true,
+        /* PROJECT TOGGLE SCRIPT */
+        const btn = document.getElementById('showProjectsBtn');
+        const projects = document.getElementById('allProjects');
+
+        btn.addEventListener('click', () => {
+            const isHidden = projects.style.display === "none" || projects.style.display === "";
+            
+            if (isHidden) {
+                projects.style.display = "grid";
+                btn.textContent = "Hide Projects";
+                btn.setAttribute('aria-expanded', 'true');
+                
+                // Re-init AOS for animation when shown
+                setTimeout(() => {
+                    AOS.refresh();
+                }, 100);
+            } else {
+                projects.style.display = "none";
+                btn.textContent = "All Our Projects";
+                btn.setAttribute('aria-expanded', 'false');
+            }
         });
 
-     /*back-to-top*/
+        /* BACK-TO-TOP SCRIPT */
         document.addEventListener("DOMContentLoaded", function () {
-    const backToTopBtn = document.querySelector('.back-to-top');
+            const backToTopBtn = document.querySelector('.back-to-top');
 
-    // Show/hide button on scroll
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
-        backToTopBtn.style.display = 'block';
-      } else {
-        backToTopBtn.style.display = 'none';
-      }
-    });
+            // Show/hide button on scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    backToTopBtn.style.display = 'block';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
 
-    // Smooth scroll to top
-    backToTopBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  });
+            // Smooth scroll to top
+            backToTopBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
-
+    
     <script src="frontend.js"></script>
 </body>
 </html>
