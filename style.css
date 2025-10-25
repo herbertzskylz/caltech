@@ -11,7 +11,11 @@ body{
 }
 
 .header{
-    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 44;
+    min-height: 60vh;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url();
     background-position: center;
     background-size: cover;
