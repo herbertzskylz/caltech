@@ -5,7 +5,7 @@
     font-family: 'poppins' sans-serif;
 }
 body{
-    background: #1a1a2e;
+    background: darkslategrey;
     color: #fff;
     overflow-x: hidden;
 }
@@ -15,10 +15,8 @@ body{
     top: 0;
     width: 100%;
     z-index: 44;
-    min-height: 60vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url();
-    background-position: center;
-    background-size: cover;
+    min-height: 45vh;
+    background-color: darkblue;
 
 }
 nav{
@@ -60,11 +58,6 @@ nav{
     text-align: center;
 }
 
-.L img{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-}
 .header .text-box{
     width: 80%;
     text-align: center;
@@ -103,8 +96,11 @@ nav .fa{
 }
 
 @media(max-width:700px){
+    .header .text-box{
+        width: 100%;
+    }
    .header .text-box h1{
-        font-size: 20px;
+        font-size: 14px;
     }
   .header  .text-box p, .us  .text-box p  {
         font-size: 12px;
@@ -113,12 +109,7 @@ nav .fa{
     nav a{
         font-size: 16px;
     }
-    .L img{
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    height: 120px;
-}
+
     .navLinks ul li{
         display: block;
         text-align: center;
@@ -165,9 +156,10 @@ nav .fa{
 
 /*----us-section-----*/
 .us{
-    width: 80%;
+    background-color: #000;
+    width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 20px auto;
     padding-top: 10px;
     color: rgba(241, 241, 242, 0.925);
 }
@@ -177,13 +169,20 @@ nav .fa{
     font-weight: 600;
 }
 .us p{
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 1.3;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
     color: #eeecec;
 }
 .us-col p::before, .const ul li::before{
     content: "📍";
+}
+
+.card{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-basis: 31%;
 }
 
 .row{
@@ -192,17 +191,6 @@ nav .fa{
     justify-content: space-between;
 }
 
-.us-col{
-    flex-basis: 30%;
-    margin-bottom: 5%;
-    border-radius: 10px;
-    padding: 10px 12px;
-    background: transparent;
-    border: 2px solid rgb(129, 12, 66);
-    text-align: left;
-    cursor: pointer;
-    transition: .5s;
-}
 .us-col:hover, .const:hover{
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
@@ -878,10 +866,7 @@ article p {
          }
     }
 
-    /* ==================================== */
 /* SERVICES PAGE STYLES        */
-/* ==================================== */
-
 .services {
     width: 80%;
     margin: auto;
